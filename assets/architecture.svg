@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#57d6bd"/></marker></defs>
+<rect width="1000" height="430" rx="18" fill="#0d1424"/>
+<g font-family="Arial,sans-serif">
+<text x="38" y="57" fill="#f4f6ff" font-size="34" font-weight="bold">CRASHVAULT</text>
+<text x="38" y="85" fill="#aebbd4" font-size="16">An acknowledgment is a promise. Make the bytes earn it.</text>
+<g fill="#19263c" stroke="#344761" stroke-width="1.5">
+<rect x="38" y="124" width="180" height="91" rx="12"/><rect x="279" y="124" width="180" height="91" rx="12"/>
+<rect x="521" y="124" width="180" height="91" rx="12"/><rect x="762" y="124" width="200" height="91" rx="12"/>
+</g>
+<g fill="#f4f6ff" font-size="20" text-anchor="middle"><text x="128" y="159">PUT / DELETE</text><text x="369" y="159">APPEND LOG</text><text x="611" y="159">FLUSH + SYNC</text><text x="862" y="159">INDEX + ACK</text></g>
+<g fill="#aebbd4" font-size="13" text-anchor="middle"><text x="128" y="187">Validate printable ASCII</text><text x="369" y="187">Length guard + CRC32</text><text x="611" y="187">Default durability request</text><text x="862" y="187">Publish the new state</text></g>
+<g stroke="#57d6bd" stroke-width="3" marker-end="url(#arrow)"><path d="M224 169H270"/><path d="M466 169H512"/><path d="M708 169H753"/></g>
+<rect x="38" y="253" width="924" height="131" rx="12" fill="#111f32" stroke="#344761"/>
+<text x="60" y="286" fill="#57d6bd" font-size="20" font-weight="bold">RESTART: REPLAY THE VALID PREFIX</text>
+<text x="60" y="318" fill="#f4f6ff" font-size="16">Complete valid record → apply it. Incomplete tail → truncate it. Complete corrupt record → stop.</text>
+<text x="60" y="351" fill="#aebbd4" font-size="14">Python ↔ C format interoperability · Every byte cut tested · 2,000 seeded operations checked</text>
+</g></svg>
