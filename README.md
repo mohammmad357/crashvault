@@ -141,3 +141,8 @@ results/              Raw data, environment and report
 Compaction with atomic replacement and directory sync; exclusive process locking; binary/UTF-8 fields; injectable short-write/sync failures for the C runtime; and a stronger power-loss model. Each would need its own tests and format/compatibility decisions. Multi-key transactions, snapshots, replication and network access are outside this version's scope.
 
 MIT licensed. Original code and architecture asset; no external implementation or artwork is bundled.
+
+## Help improve this project
+
+Try the quick start, report a reproducible issue, or pick a small documentation improvement.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for reporting details, development checks and evidence expected for changes.
