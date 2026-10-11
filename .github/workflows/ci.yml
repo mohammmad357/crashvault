@@ -17,6 +17,8 @@ jobs:
         run: mkdir -p build && gcc -std=c11 -D_POSIX_C_SOURCE=200809L -O2 -Wall -Wextra -Wpedantic -Werror c/crashvault.c -o build/crashvault
       - name: Test interoperability and crash boundaries
         run: python -m unittest discover -s tests -v
+      - name: Reproduce recovery walkthrough
+        run: python tools/recovery_demo.py
       - name: Repeat with memory and UB sanitizers
         run: |
           gcc -std=c11 -D_POSIX_C_SOURCE=200809L -g -fsanitize=address,undefined -fno-omit-frame-pointer c/crashvault.c -o build/crashvault-sanitized
