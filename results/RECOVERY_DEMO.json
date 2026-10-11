@@ -1,0 +1,38 @@
+{
+  "scenario": "synthetic partial tail, not real power loss",
+  "environment": {
+    "python": "3.13.7",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "sync": true,
+  "clean_bytes": 115,
+  "torn_bytes": 128,
+  "discarded_incomplete_bytes": 13,
+  "recovered": {
+    "keys": 1,
+    "records": 4,
+    "recovered_bytes": 13,
+    "file_bytes": 115
+  },
+  "values": {
+    "alpha": "updated",
+    "beta": null,
+    "pending": null
+  },
+  "after_append_bytes": 144,
+  "python_c_bytes_equal": true,
+  "original_unchanged": true,
+  "complete_corruption": [
+    {
+      "language": "Python",
+      "error": "CorruptionError",
+      "bytes_unchanged": true
+    },
+    {
+      "language": "C",
+      "error": "checksum mismatch",
+      "bytes_unchanged": true
+    }
+  ],
+  "status": "PASS"
+}
