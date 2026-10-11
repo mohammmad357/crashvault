@@ -1,0 +1,13 @@
+{
+  "platform": "Windows-10-10.0.19045-SP0",
+  "processor": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "compiler": "gcc (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r4) 15.2.0",
+  "flags": "-std=c11 -D_POSIX_C_SOURCE=200809L -O2 -Wall -Wextra -Wpedantic -Werror",
+  "count": 10000,
+  "sync_count": 200,
+  "samples": 5,
+  "timing": "End-to-end wall clock: startup, recovery, stdin/stdout protocol and storage calls included",
+  "warmup": "one unrecorded fresh-file batch per language/workload",
+  "value_bytes": 61
+}
