@@ -100,6 +100,11 @@ The model tested is **prefix truncation of a valid log**. CRC32 and redundant le
 
 ## Evidence, not just a happy path
 
+**Try the [recovery walkthrough](RECOVERY_DEMO.md):** one command reproduces a
+115-byte valid log, a 13-byte incomplete tail, cross-language recovery, and
+rejection of a complete corrupt record. The example uses temporary synthetic
+files and records [its raw results](results/RECOVERY_DEMO.json).
+
 - **2,000 seeded operations** checked against a dictionary reference, with matching JSON responses and identical log bytes across languages.
 - **All 116 byte-cut positions** of a multi-record overwrite/delete history checked for exact recovered state, repaired bytes and successful continuation.
 - **All 232 single-bit flips** in a complete small log rejected in both implementations, without rewriting the damaged file.
